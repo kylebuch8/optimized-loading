@@ -2,6 +2,8 @@
 
 This proof of concept repository demonstrates the ability to use a single JavaScript file `loader.js` to dynamically load PatternFly Elements onto a page based on the `pfe` tags present in the markup. It also can dynamically load a PatternFly Element after page load if a new `pfe` tag is added to the page.
 
+This is heavily inspired [the work that Bryan Ollendyke has done](https://dev.to/btopro/uwc-part-3-the-magic-script-122a).
+
 ## Get started
 ```
 npm install && npm start
