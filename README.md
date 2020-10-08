@@ -71,3 +71,6 @@ Rather than setting the mutation observer on the body, what if the mutation obse
 
 ### Hosting PatternFly Elements from a CDN
 Instead of loading PatternFly Elements from `node_modules`, what if we could pull them from a static CDN? This way we'd be able to take advantage of browser cache.
+
+### Checking if the component has been registered
+Before we add a component to the page, we should check the `customElement` registry to see if the component has already been defined.
