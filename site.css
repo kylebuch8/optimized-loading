@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+pfe-card.bordered {
+  --pfe-card--BorderColor: #e7e7e7;
+  --pfe-card--BorderWeight: 1px;
+}
+
+.bg-right {
+  background-image: url(https://www.redhat.com/cms/managed-files/developers-in-room-at-whiteboard.jpg);
+  padding: 64px 0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

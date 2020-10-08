@@ -1,0 +1,167 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #261a4c;
+  --pfe-theme--font-family--heading: "Red Hat Text";
+  line-height: 1.444;
+}
+
+pfe-card {
+  --pfe-card--BorderRadius: 0;
+}
+
+pfe-tab {
+  font-family: "Red Hat Display";
+}
+
+pfe-tab-panel {
+  font-family: "Red Hat Text";
+}
+
+pfe-cta {
+  --pfe-cta--FontSize: 1.8rem;
+  --pfe-cta--FontWeight: 700;
+  --pfe-cta--FontFamily: "Red Hat Display";
+}
+
+.pfe-l-grid.pfe-m-gutters {
+  grid-gap: 32px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: "Red Hat Display";
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.font-size-12 {
+  font-size: 1.2rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.monospace {
+  font-family: "Overpass Mono";
+}
+
+a {
+  text-decoration: none;
+}
+
+.txt-red {
+  color: #e00;
+}
+
+a.txt-red:hover {
+  color: #ff3c3c;
+}
+
+.txt-white {
+  color: #fff;
+}
+
+a.txt-white:hover {
+  color: #e6e6e6;
+}
+
+pfe-band {
+  --pfe-band--BackgroundColor: transparent;
+  --theme: saturated;
+}
+
+.logo.logo-container {
+  width: 294px;
+  height: 75px;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo path {
+  fill: #fff;
+}
+
+.logo.logo-icon {
+  width: 75px;
+  height: 75px;
+}
+
+.logo.logo-text {
+  height: 75px;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.episodes > a {
+  display: flex;
+}
+
+.episodes pfe-card span {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.episodes pfe-card h4 {
+  margin: 0;
+}
+
+pfe-card.transparent {
+  --pfe-card--BackgroundColor: transparent;
+  --theme: saturated;
+}
+
+pfe-card.padding-0 {
+  padding: 0;
+}
+
+.bg-purple {
+  background-color: #5e40be;
+}
+
+.clh-games {
+  background: linear-gradient(to bottom,#261a4c 0,#175382 100%);
+}
+
+.clh-newsletter {
+  background: linear-gradient(to bottom,#175382 0,#0499c5 100%);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}

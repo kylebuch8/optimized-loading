@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Loading PatternFly Elements by scanning the DOM for tags">
+  <title>PatternFly Elements - Optimized Loading</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="node_modules/@patternfly/pfelement/dist/pfelement.min.css">
+  <link rel="stylesheet" href="node_modules/@patternfly/pfe-navigation/dist/pfe-navigation--lightdom.min.css">
+  <link rel="stylesheet" href="node_modules/@patternfly/pfe-styles/dist/pfe-layouts.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+  <script defer src="loader.js"></script>
+</head>
+<body unresolved>
+  <header>
+    <pfe-navigation pfe-sticky pfe-close-on-click="external" pfe-menu-label="Menu">
+      <div slot="skip">
+        <ul>
+          <li><a href="#rh-main-content">Skip to content</a></li>
+        </ul>
+      </div>
+      <a slot="logo" href="https://company.com">
+        <img class="logo" src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" width="135" title="Red Hat" />
+      </a>
+      <pfe-navigation-main role="navigation" aria-label="Main">
+        <ul>
+          <li>
+            <pfe-navigation-item>
+              <h3>
+                <a href="#">Products</a>
+              </h3>
+            </pfe-navigation-item>
+          </li>
+          <li>
+            <pfe-navigation-item>
+              <h3>
+                <a href="#">Solutions</a>
+              </h3>
+            </pfe-navigation-item>
+          </li>
+          <li>
+            <pfe-navigation-item>
+              <h3>
+                <a href="#">Learning &amp; support</a>
+              </h3>
+            </pfe-navigation-item>
+          </li>
+          <li>
+            <pfe-navigation-item>
+              <h3>
+                <a href="#">Resources</a>
+              </h3>
+            </pfe-navigation-item>
+          </li>
+          <li>
+            <pfe-navigation-item>
+              <h3>
+                <a href="#">Red Hat &amp; open source</a>
+              </h3>
+            </pfe-navigation-item>
+          </li>
+        </ul>
+      </pfe-navigation-main>
+    </pfe-navigation>
+  </header>
+  <main>
+    <pfe-band pfe-img-src="https://www.redhat.com/cms/managed-files/bg_cloud-server-hexagonal-grid.jpg">
+      <div slot="pfe-band--header">
+        <h1>Dynamically Loading Components</h1>
+        <h2>One at a time</h2>
+        <pfe-cta pfe-priority="primary">
+          <a href="#">Get the details</a>
+        </pfe-cta>
+      </div>
+      <div slot="pfe-band--footer">
+        <pfe-cta>
+          <a href="#">Join us in our quest to componetize the web</a>
+        </pfe-cta>
+      </div>
+    </pfe-band>
+    <pfe-band pfe-color="lightest">
+      <h2 class="pfe-l--text-align--center">More from the world's enterprise open source leader</h2>
+      <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col">
+        <pfe-card pfe-color="lightest" class="bordered">
+          <img src="https://www.redhat.com/cms/managed-files/card-header_cloud-native-meets-hybrid.jpg" pfe-overflow="top right left" alt="Enterprise automation illustration">
+          <h2>Cloud-native meets hybrid cloud</h2>
+          <p>Tackle modern IT in 3 steps.</p>
+          <pfe-cta slot="pfe-card--footer" pfe-priority="secondary">
+            <a href="https://www.redhat.com/en/engage/cloud-native-meets-hybrid-cloud-strategy-guide">Get the e-book</a>
+          </pfe-cta>
+        </pfe-card>
+        <pfe-card pfe-color="lightest" class="bordered">
+          <img src="https://www.redhat.com/cms/managed-files/OSS-Starting-Small-HP-Card@2x.png" pfe-overflow="top right left" alt="Kubernetes Thought Leadership">
+          <h2>Starting Small: Open Data in Chile</h2>
+          <p>Data is helping people preserve natural and cultural treasures. Our latest short film shows how.</p>
+          <pfe-cta slot="pfe-card--footer" pfe-priority="secondary">
+            <a href="https://www.redhat.com/en/open-source-stories/starting-small-open-data">Watch now</a>
+          </pfe-cta>
+        </pfe-card>
+        <pfe-card pfe-color="lightest" class="bordered">
+          <img src="https://www.redhat.com/cms/managed-files/OpenShift-redhat.com-Product-Page-Card@2x-new_0.png" pfe-overflow="top right left" alt="Red Hat OpenShift">
+          <h2>Develop and scale big ideas with Kubernetes</h2>
+          <p>Let Red Hat&reg; OpenShift&reg; manage your cloud deployments so your developers can be more productive.</p>
+          <pfe-cta slot="pfe-card--footer" pfe-priority="secondary">
+            <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift">Get started</a>
+          </pfe-cta>
+        </pfe-card>
+      </div>
+    </pfe-band>
+    <pfe-band pfe-color="lighter">
+      <h2 class="pfe-l--text-align--center" slot="pfe-band--header">All Red Hat products</h2>
+      <pfe-content-set pfe-variant="wind" pfe-align="center">
+        <p pfe-content-set--header>Cloud</p>
+        <div class="pfe-l-grid pfe-m-gutters pfe-m-all-3-col" pfe-content-set--panel>
+          <a href="#">
+            <h3>
+              Red Hat<br>
+              OpenShift<br>
+              Container Platform
+            </h3>
+            <p>An enterprise-ready Kubernetes container platform.</p>
+          </a>
+          <a href="#">
+            <h3>
+              Red Hat<br>
+              Quay
+            </h3>
+            <p>A container image registry for building, distributing, and deploying containers.</p>
+          </a>
+          <a href="#">
+            <h3>
+              Red Hat<br>
+              Ceph Storage
+            </h3>
+            <p>A block and object storage platform for clouds.</p>
+          </a>
+          <a href="#">
+            <h3>
+              Red Hat<br>
+              Cloud Suite
+            </h3>
+            <p>A suite of tools for public and private cloud infrastructure.</p>
+          </a>
+        </div>
+        <p pfe-content-set--header>Infrastructure</p>
+        <div pfe-content-set--panel>Infrastructure content</div>
+        <p pfe-content-set--header>Integration</p>
+        <div pfe-content-set--panel>Integration content</div>
+        <p pfe-content-set--header>App dev</p>
+        <div pfe-content-set--panel>App dev content</div>
+        <p pfe-content-set--header>Automation &amp; management</p>
+        <div pfe-content-set--panel>Automation &amp; management content</div>
+      </pfe-content-set>
+      <div slot="pfe-band--footer" class="pfe-l--text-align--center">
+        <pfe-cta>
+          <a href="https://www.redhat.com/en/technologies">See how our products build solutions</a>
+        </pfe-cta>
+      </div>
+    </pfe-band>
+    <pfe-band pfe-color="lightest">
+      <div class="pfe-l--text-align--center" slot="pfe-band--header">
+        <h2>Tech topics worth exploring</h2>
+        <p>Expand a topic to learn more and see related resources.</p>
+      </div>
+      <div class="pfe-l-grid pfe-m-gutters pfe-m-all-3-col">
+        <div>
+          <pfe-cta pfe-priority="secondary" pfe-variant="wind">
+            <a href="">APIs</a>
+          </pfe-cta>
+        </div>
+        <div>Automation</div>
+        <div>Cloud</div>
+        <div>Containers</div>
+        <div>DevOps</div>
+        <div>Digital transformation</div>
+        <div>Integration</div>
+        <div>Linux</div>
+        <div>Microservices</div>
+        <div>Middleware</div>
+        <div>Security</div>
+        <div>Virtualization</div>
+      </div>
+      <div slot="pfe-band--footer" class="pfe-l--text-align--center">
+        <pfe-cta pfe-priority="secondary">
+          <a href="#">See all topics</a>
+        </pfe-cta>
+      </div>
+    </pfe-band>
+    <pfe-band pfe-color="lightest">
+      <div class="pfe-l-grid pfe-m-gutters pfe-m-all-7-col bg-right">
+        <pfe-card pfe-color="lightest">
+          <h2>Red Hat and open source</h2>
+          <p>We believe in collaboration. We believe in choice, control, and freedom. Open source values like meritocracy, community building, and transparency are changing the way we approach business and life.</p>
+          <div slot="pfe-card--footer">
+            <pfe-cta pfe-priority="primary">
+              <a href="#">Learn more about open source</a>
+            </pfe-cta>
+          </div>
+        </pfe-card>
+      </div>
+    </pfe-band>
+  </main>
+</body>
+</html>

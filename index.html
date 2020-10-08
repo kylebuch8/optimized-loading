@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Loading PatternFly Elements by scanning the DOM for tags">
+  <title>PatternFly Elements - Optimized Loading</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="node_modules/@patternfly/pfelement/dist/pfelement.min.css">
+  <link rel="stylesheet" href="node_modules/@patternfly/pfe-navigation/dist/pfe-navigation--lightdom.min.css">
+  <link rel="stylesheet" href="node_modules/@patternfly/pfe-styles/dist/pfe-layouts.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+  <script defer src="loader.js"></script>
+  <style>
+    h2 {
+      font-size: 1.125rem;
+    }
+  </style>
+</head>
+<body unresolved>
+  <main>
+    <pfe-band>
+      <h1>PatternFly Elements - Optimized Loading</h1>
+    </pfe-band>
+    <pfe-band pfe-color="lightest">
+      <p>This proof of concept repository demonstrates the ability to use a single JavaScript file `loader.js` to dynamically load PatternFly Elements onto a page based on the `pfe` tags present in the markup. It also can dynamically load a PatternFly Element after page load if a new `pfe` tag is added to the page.</p>
+      <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col">
+        <pfe-card>
+          <h2 slot="pfe-card--header">Red Hat homepage</h2>
+          <pfe-cta>
+            <a href="red-hat.html">View page</a>
+          </pfe-cta>
+        </pfe-card>
+        <pfe-card>
+          <h2 slot="pfe-card--header">Customer Portal homepage</h2>
+          <pfe-cta>
+            <a href="portal.html">View page</a>
+          </pfe-cta>
+        </pfe-card>
+        <pfe-card>
+          <h2 slot="pfe-card--header">Command Line Heroes homepage</h2>
+          <pfe-cta>
+            <a href="command-line-heroes.html">View page</a>
+          </pfe-cta>
+        </pfe-card>
+      </div>
+    </pfe-band>
+  </main>
+</body>
+</html>

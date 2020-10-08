@@ -1,0 +1,40 @@
+{
+  "name": "optimized-loading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node browser-sync.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@patternfly/pfe-accordion": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-autocomplete": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-avatar": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-band": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-card": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-collapse": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-content-set": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-cta": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-datetime": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-health-index": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-icon": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-icon-panel": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-markdown": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-modal": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-navigation": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-number": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-page-status": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-progress-indicator": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-select": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-styles": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-tabs": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-toast": "^1.0.0-prerelease.56"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "compression": "^1.7.4"
+  }
+}
